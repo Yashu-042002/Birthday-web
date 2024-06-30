@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <h1 id="page-title">From The Core <span>THAKUR's Family</span></h1>
+    <h2 id="page-hero-text">wishing you a very</h2>
+    <div class="card-container">
+      <h1 id="marked-text">Happy Birthday</h1>
+      <img
+        id="card image"
+        src="./Assets/birthday-boy.jpg"
+        alt="Birthday picture"
+      />
+      <p>Our Family Foundation and Dream Builder</p>
+      <span>We all ❤️ you a lot.</span>
+    </div>
+
+    <p class="footer">Copyright @ <span id="copyright"></span></p>
+    <script>
+       window.onload = function() {
+            const currDate = new Date().getFullYear();
+            console.log(currDate);
+            document.getElementById('copyright').innerHTML = currDate;
+        };
+      </script>
+  </body>
+</html>

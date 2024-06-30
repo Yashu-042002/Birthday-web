@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Playwrite DE Grund", cursive;
+  font-optical-sizing: auto;
+  background-image: url("./Assets/bg.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#page-title {
+  text-align: center;
+  color: #219c90;
+}
+
+#page-title span {
+  color: #ffc700;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+#page-hero-text {
+  text-align: center;
+  color: #ee4e4e;
+  padding-top: 0;
+}
+
+.card-container {
+  width: 400px;
+  height: 500px;
+  background-color: #ffc700;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 10px rgba(108, 88, 0, 0.458);
+}
+
+.card-container img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.card-container h1 {
+  color: white;
+  text-shadow: 2px 2px 1px #ee4e4e;
+}
+
+.card-container p {
+  background-color: white;
+  padding: 5px 15px;
+  border-radius: 30px;
+  color: #957500;
+}
+
+.card-container span {
+  font-style: italic;
+}
+
+.footer {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #219c90;
+  margin-bottom: 0;
+  color: white;
+}
+
+/* Media Queries */
+
+/* Mobile Screens (up to 600px wide) */
+@media (max-width: 600px) {
+  .card-container {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    box-shadow: none;
+  }
+
+  .card-container img {
+    width: 100%;
+  }
+
+  #page-title {
+    font-size: 1.5em;
+  }
+
+  #page-title span {
+    display: block;
+  }
+
+  #page-hero-text {
+    font-size: 1.2em;
+  }
+
+  .card-container h1 {
+    font-size: 2em;
+  }
+
+  .card-container p {
+    font-size: 0.74em;
+    padding: 5px 10px;
+  }
+
+  .footer {
+    width: 100%;
+    font-size: 0.9em;   
+  }
+}
+
+/* Tablet Screens (601px to 1024px wide) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .card-container {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .card-container img {
+    width: 100%;
+  }
+
+  #page-title {
+    font-size: 2em;
+  }
+
+  #page-hero-text {
+    font-size: 1.5em;
+  }
+
+  .card-container h1 {
+    font-size: 2.5em;
+  }
+
+  .card-container p {
+    font-size: 1.2em;
+    padding: 10px 20px;
+  }
+
+  .footer {
+    font-size: 1em;
+  }
+}
